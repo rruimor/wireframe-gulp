@@ -1,0 +1,37 @@
+.header {
+  flex: none;
+  height: $header-height;
+  background-color: $primary-color--dark;
+
+  a, h1, p {
+    font-family: "Arial", Times, serif;
+    color: lighten(grey, 30%);
+  }
+}
+
+.navbar {
+  display: flex;
+  height: $navbar-height;
+
+  &__link {
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+  }
+}
+
+.logo-section {
+  display: flex;
+  height: $header-height - $navbar-height;
+
+  h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  p {
+    text-align: center;
+    margin: 40px;
+    line-height: 1.6em;
+  }
+}

@@ -1,0 +1,64 @@
+/* RESET FILE: reset.scss */
+html, body, ul, li, nav {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+html, body {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+.column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .column--vertical-items {
+    flex-direction: column; }
+  .column--left-aligned {
+    justify-content: flex-start; }
+  .column--right-aligned {
+    justify-content: flex-end; }
+  .column--white {
+    background-color: white; }
+
+.header {
+  flex: none;
+  height: 500px;
+  background-color: #343434; }
+  .header a, .header h1, .header p {
+    font-family: "Arial", Times, serif;
+    color: #cdcdcd; }
+
+.navbar {
+  display: flex;
+  height: 120px; }
+  .navbar__link {
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold; }
+
+.logo-section {
+  display: flex;
+  height: 380px; }
+  .logo-section h1 {
+    font-size: 3em;
+    margin: 0; }
+  .logo-section p {
+    text-align: center;
+    margin: 40px;
+    line-height: 1.6em; }
+
+.main_content {
+  flex: 1;
+  height: calc(100% - $header-height - $footer-height); }
+
+.footer {
+  flex: none;
+  height: 70px;
+  background-color: #343434; }
