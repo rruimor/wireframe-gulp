@@ -1,13 +1,5 @@
-// Colors variables
-$primary-color: grey;
-$primary-color--dark: darken($primary-color, 30%);
-
-// Height variables
-$header-height: 500px;
-$navbar-height: 120px;
-$footer-height: 70px;
-
 @import "_reset";
+@import "_variables";
 @import "_flexbox";
 @import "_header";
 @import "_main_content";
